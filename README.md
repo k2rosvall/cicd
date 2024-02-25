@@ -26,3 +26,8 @@ Things you may want to cover:
 - On github settings -> branches -> rules check require status check... 
 
 - Add test on status checks that are required
+
+## Rubocop linter
+
+- Create file named .rubocop.yml on workflows directory
+
