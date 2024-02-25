@@ -1,24 +1,36 @@
-# README
+# HOW TO SET UP GITHUB ACTIONS TO CHECK FOR RUBCOP AND TESTS
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a step by step process of how to add github actions to avoid merging a branch until
+the linter and tests are successful
 
 Things you may want to cover:
 
-* Ruby version
+## Rails Test
 
-* System dependencies
+- Create a directory named .github and inside a directory called workflows
 
-* Configuration
+```
+    mkdir .github
+    mkdir .workflows
+```
+- Inside workflows make a file named .tests.yml
 
-* Database creation
+- Provide master key to github
 
-* Database initialization
+```
+    Settings -> secrets -> actions -> new repository secret -> RAILS_MASTER_KEY
+```
 
-* How to run the test suite
+- Uncomment RAILS_MASTER_KEY in .tests.yml
 
-* Services (job queues, cache servers, search engines, etc.)
+- On github settings -> branches -> rules check require status check... 
 
-* Deployment instructions
+- Add test on status checks that are required
 
-* ...
+## Rubocop linter
+
+- Create file named .rubocop.yml on workflows directory
+
+- On github settings -> branches -> rules check require status check... 
+
+- Add all linters on status checks that are required
