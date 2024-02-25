@@ -1,7 +1,7 @@
-class StaticPagesController < ApplicationController
-  def landing_page
-  end
+# frozen_string_literal: true
 
-  def pricing
-  end
+class StaticPagesController < ApplicationController
+  def landing_page; end
+
+  def pricing; end
 end

@@ -31,3 +31,6 @@ Things you may want to cover:
 
 - Create file named .rubocop.yml on workflows directory
 
+- On github settings -> branches -> rules check require status check... 
+
+- Add all linters on status checks that are required
