@@ -11,7 +11,7 @@ Things you may want to cover:
 
 ```
     mkdir .github
-    mkdir .workflows
+    mkdir workflows
 ```
 - Inside workflows make a file named .tests.yml
 
