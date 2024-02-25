@@ -1,4 +1,4 @@
-# HOW TO SET UP GITHUB ACTIONS TO CHECK FOR RUBCOP AND TESTS
+# HOW TO SET UP GITHUB ACTIONS TO CHECK FOR RUBOCOP AND TESTS
 
 This is a step by step process of how to add github actions to avoid merging a branch until
 the linter and tests are successful
